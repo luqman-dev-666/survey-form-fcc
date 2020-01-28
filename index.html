@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css?version=1">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="background">
+            <div class="header row text-center ">
+                <div class="col">
+                    <h1>freeCodeCamp Survey Form</h1>
+                    <p class="subtitle" >Thank you for taking the time to help us improve the platform</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-7">
+                    <div class="form">
+                        <form>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="age">Age <small>(optional)</small> </label>
+                                <input type="text" class="form-control" id="age" placeholder="Enter your age">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Which option best describes your current role?</label>
+                                <select class="form-control">
+                                    <option>Select Current Role</option>
+                                    <option>Student</option>
+                                    <option>Full Time Job</option>
+                                    <option>Full Time Learner</option>
+                                    <option>Prefer Not To Say</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Would you recommend freeCodeCamp to a friend?</label><br>
+                                <input type="radio" name="friend" value="Definitely"> Definitely<br>
+                                <input type="radio" name="friend" value="Maybe"> Maybe<br>
+                                <input type="radio" name="friend" value="Not sure"> Not sure
+                            </div>
+
+                            <div class="form-group">
+                                <label>What is your favorite feature of freeCodeCamp?</label>
+                                <select class="form-control">
+                                    <option>Select an Option</option>
+                                    <option>Challenges</option>
+                                    <option>Projects</option>
+                                    <option>Communinity</option>
+                                    <option>Open Source</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Example textarea</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>  
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

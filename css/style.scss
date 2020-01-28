@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,800&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body , html{
+    height: 100%;
+    background-image: url("../stock/1.jpg") !important;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Open Sans";
+    
+}
+
+/***** Background See Through ******/
+.background {
+    // height: 100%;
+    background-color:rgba(248, 201, 201, 0.6) !important;
+}
+
+/***** Header ******/
+.header {
+    padding-top: 100px;
+}
+
+.header h1 {
+    color: white;
+    font-weight: 800;
+}
+
+.subtitle {
+    color: white;
+    font-style: italic;
+}
+
+/********** Form *************/
+
+.form {
+    background-color:rgba(247, 133, 133, 0.6);
+    padding: 50px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 800;
+    font-size: 18px;
+
+}
+
+.form-group label {
+    text-align: left !important;
+}
