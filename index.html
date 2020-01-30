@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css?version=1">
-    <title>Document</title>
+    <title>Survey Form</title>
 </head>
 <body>
-
     <div class="background">
             <div class="header row text-center ">
                 <div class="col">
@@ -18,25 +17,24 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-7">
-                    <div class="form">
+                    <div class="form ">
                         <form>
                             <div class="form-group">
                                 <label for="name">Name</label>
                                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-3">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter your email">
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-3">
                                 <label for="age">Age <small>(optional)</small> </label>
-                                <input type="text" class="form-control" id="age" placeholder="Enter your age">
+                                <input type="number" min="10" max="100" class="form-control" id="age" placeholder="Enter your age">
                             </div>
                             
-                            <div class="form-group">
+                            <div class="form-group pt-3">
                                 <label>Which option best describes your current role?</label>
                                 <select class="form-control">
                                     <option>Select Current Role</option>
@@ -48,31 +46,64 @@
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label>Would you recommend freeCodeCamp to a friend?</label><br>
-                                <input type="radio" name="friend" value="Definitely"> Definitely<br>
-                                <input type="radio" name="friend" value="Maybe"> Maybe<br>
-                                <input type="radio" name="friend" value="Not sure"> Not sure
+                            <div class="form-group pt-3">
+                                <p>Would you recommend freeCodeCamp to a friend?</p>
+                                <label>
+                                <input name="friend" value="definitely" type="radio" class="input-radio" checked />Definitely</label><br>
+                                <label>
+                                <input name="friend" value="maybe" type="radio" class="input-radio" />Maybe</label
+                                    ><br>
+                                <label><input name="friend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
                             </div>
 
-                            <div class="form-group">
+                            <div class="form-group pt-3">
                                 <label>What is your favorite feature of freeCodeCamp?</label>
                                 <select class="form-control">
-                                    <option>Select an Option</option>
-                                    <option>Challenges</option>
-                                    <option>Projects</option>
-                                    <option>Communinity</option>
-                                    <option>Open Source</option>
+                                    <option disabled selected value>Select an Option</option>
+                                    <option value="Challenges">Challenges</option>
+                                    <option value="Projects">Projects</option>
+                                    <option value="Communinity">Communinity</option>
+                                    <option value="student">Open Source</option>
                                 </select>
                             </div>
 
-                            <div class="form-group">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class=" form-group pt-3">
+                                <p>
+                                    What would you like to see improved?
+                                    <span class="clue">(Check all that apply)</span>
+                                    </p>
+                                    <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox" />Front-end Projects</label
+                                        ><br>
+                                    <label>
+                                    <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox" />Back-end Projects</label
+                                        ><br>
+                                    <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox" />Data Visualization</label
+                                        ><br>
+                                    <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox" />Challenges</label
+                                        ><br>
+                                    <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox" />Open Source Community</label
+                                        ><br>
+                                    <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox" />Gitter help rooms</label
+                                        ><br>
+                                    <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox" />Videos</label
+                                        ><br>
+                                    <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox" />City Meetups</label
+                                        ><br>
+                                    <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox" />Wiki</label
+                                        ><br>
+                                    <label><input name="prefer" value="forum" type="checkbox" class="input-checkbox" />Forum</label
+                                        ><br>
+                                    <label><input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox" />Additional Courses</label>
                             </div>
+
+                            <div class="form-group pt-3">
+                                <label for="exampleFormControlTextarea1">Any comments or suggestions?</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Enter your comments here ..." rows="6"></textarea>
+                            </div>
+
+                            <button class="btn btn-primary btn-block py-3 mt-5">Submit</button>
                         </form>
                     </div>
-                </div>
             </div>  
     </div>
 

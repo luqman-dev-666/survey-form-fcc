@@ -11,9 +11,10 @@ body, html {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Open Sans";
+  font-size: 1rem;
 }
 
-/***** Background See Through ******/
+/***** Background See Through *******/
 .background {
   background-color: rgba(248, 201, 201, 0.6) !important;
 }
@@ -47,4 +48,22 @@ body, html {
 .form-group label {
   text-align: left !important;
 }
+
 /*# sourceMappingURL=style.css.map */
+
+/***************************************************improvements**************************************************************/
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem !important;
+  min-height: 1.25rem !important;
+  min-width: 1.25rem !important;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
